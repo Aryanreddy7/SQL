@@ -1,3 +1,6 @@
+CREATE DATABASE CompanyDB;
+USE CompanyDB;
+
 CREATE TABLE Employees (emp_id INT, first_name VARCHAR(50), last_name VARCHAR(50), email VARCHAR(100), phone_number VARCHAR(15), hire_date DATE, job_id VARCHAR(10), salary DECIMAL(10, 2), commission_pct DECIMAL(5, 2), department_id INT);
 CREATE TABLE Departments (dept_id INT, dept_name VARCHAR(100), manager_id INT, location_id INT, established_year INT, budget DECIMAL(15, 2), contact_email VARCHAR(100), phone VARCHAR(15), floor_number INT, building_name VARCHAR(100));
  CREATE TABLE Projects (proj_id INT, proj_name VARCHAR(100), start_date DATE, end_date DATE, budget DECIMAL(15, 2), client_name VARCHAR(100), status VARCHAR(50), lead_id INT, team_size INT, description TEXT); 
